@@ -15,7 +15,7 @@ Your comments and suggestions are welcome.
 
 Created on Fri Apr 14 2023
 
-Revised on Sat Apr 15 2023
+Revised on Sat Apr 18 2023
 
 Original Author: S.Shiva sai adithiyan <shivasaiadithiyan2210687@ssn.edu.in>
 
@@ -91,11 +91,14 @@ class Point:
         as a list of tuples.
 
         """
+        #dictionary to store the points and their respective
+        #distance from the common point object.
         point_distance={}
         for object in points_secquence:
             Euclidean_distance=self.distance(object)
             point_distance[(object._x,object._y)]=Euclidean_distance
         
+        #sorting the dictionary accordint to distance
         sorted_distance=sorted(list(point_distance.values())) 
         sorted_coordinates=[]
         for distance in sorted_distance:
