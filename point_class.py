@@ -146,3 +146,8 @@ if __name__=="__main__":
         except ValueError:
             print("Enter a Valid Input.")
             print()
+
+        except KeyboardInterrupt:
+            print("Program aborted.")
+            print()
+
